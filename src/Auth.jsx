@@ -41,7 +41,7 @@ export default function Auth({ theme, onToggleTheme }) {
           if (error.message.includes('already registered')) {
             setError('המייל הזה כבר רשום. נסה להתחבר.')
           } else {
-            setError('שגיאה בהרשמה. נסה שוב.')
+            setError('שגיאה בהרשמה: ' + error.message)
           }
         }
       }
